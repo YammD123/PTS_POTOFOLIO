@@ -48,7 +48,7 @@
             </div>
             <div>
               <h4 class="text-lg font-semibold">Address</h4>
-              <p class="text-gray-400">Kedungwringin, Jilawang, Banyumas, Jawa Tengah</p>
+              <p class="text-gray-400">Kedungwringin, Jatilawang, Banyumas, Jawa Tengah</p>
             </div>
           </div>
 
