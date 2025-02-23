@@ -2,6 +2,7 @@
 
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +11,33 @@
 </head>
 
 <body class="bg-gray-950 text-white">
-  <nav class="container mx-auto py-4 px-6 flex justify-between items-center">
-    <h2 class="text-3xl font-bold tracking-wide">
-      PORTO<span class="text-yellow-300">..</span>
-    </h2>
+  <nav class=" text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="#" class="text-xl font-bold text-yellow-400">My Portfolio</a>
 
-    <ul class="flex space-x-6 text-lg font-semibold border-b-2 border-yellow-300">
-      <li><a href="#home" class="hover:text-yellow-300 transition duration-300">Home</a></li>
-      <li><a href="#about" class="hover:text-yellow-300 transition duration-300">About</a></li>
-      <li><a href="#education" class="hover:text-yellow-300 transition duration-300">Educational & Skills</a></li>
-      <li><a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a></li>
-    </ul>
+        <button id="menu-btn" class="text-white text-2xl md:hidden focus:outline-none">
+          ☰
+        </button>
+
+        <ul id="menu" class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          <li><a href="#education" class="hover:text-yellow-400">Educational & Skills</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul id="mobile-menu" class="hidden flex-col space-y-4 py-4 text-center border-t border-gray-700 md:hidden">
+        <li><a href="#home" class="block hover:text-yellow-400">Home</a></li>
+        <li><a href="#about" class="block hover:text-yellow-400">About</a></li>
+        <li><a href="#education" class="block hover:text-yellow-400">Educational & Skills</a></li>
+        <li><a href="#contact" class="block hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
   </nav>
-
   <section id="home" class="bg-gray-900 min-h-screen flex items-center justify-center">
     <?php include "./src/components/Home.html"; ?>
   </section>
@@ -91,9 +106,11 @@
 
       </div>
     </div>
+    
   </section>
 
   <?php include "./src/components/Footer.html"; ?>
+  <script src="./src/TogleMenu.js"></script>
 </body>
 
 </html>
