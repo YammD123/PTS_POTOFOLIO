@@ -1,7 +1,7 @@
 <?php include "./db.php"; ?>
 
 <!doctype html>
-<html>
+<html class="scroll-smooth ease-in-out duration-500">
 
 <head>
   <meta charset="UTF-8">
