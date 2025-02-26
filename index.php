@@ -10,8 +10,8 @@
   <title>Portfolio</title>
 </head>
 
-<body class="bg-gray-950 text-white">
-  <nav class=" text-white shadow-md">
+<body class=" text-white ">
+  <nav class=" text-white shadow-md sticky bg-gray-950 top-0 w-full z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center py-4">
         <!-- Logo -->
@@ -39,7 +39,44 @@
     </div>
   </nav>
   <section id="home" class="bg-gray-900 min-h-screen flex items-center justify-center">
-    <?php include "./src/components/Home.html"; ?>
+  <main class="px-6 py-16 min-h-screen flex flex-col justify-center items-center">
+      <div class="bg-gray-900/80 backdrop-blur-lg border border-yellow-400 shadow-2xl rounded-2xl px-12 py-14 w-full max-w-7xl text-center md:text-left">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <!-- Profile Image -->
+          <div class="relative">
+            <img 
+              src="./img/siam.jpg"
+              class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-lg border-4 border-yellow-300 transform transition-all duration-300 hover:scale-105"
+              alt="Profile Picture"
+            />
+          </div>
+    
+          <!-- Profile Text -->
+          <div class="max-w-3xl">
+            <h1 class="text-4xl font-bold text-yellow-300 mb-2">Siam Al Sobari</h1>
+            <h2 class="text-lg text-gray-300 font-medium italic">Pelajar & Calon Fullstack Developer</h2>
+            
+            <p class="mt-6 text-gray-300 leading-relaxed">
+              Saya siswa kelas 10 SMK Telkom Pwt yang tertarik di dunia pemrograman, terutama 
+              <span class="text-yellow-300 font-semibold">React.js</span> dan 
+              <span class="text-yellow-300 font-semibold">Next.js</span>.  
+              Saya ingin menjadi seorang 
+              <span class="text-yellow-300 font-semibold">Fullstack Developer</span> dan memahami cara 
+              <span class="text-yellow-300 font-semibold">deploy aplikasi</span> dengan baik.
+            </p>
+    
+            <p class="mt-4 text-gray-300 leading-relaxed">
+              Saat ini saya sedang fokus belajar tentang 
+              <span class="text-yellow-300 font-semibold">Pages Router</span> di Next.js dan bagaimana 
+              <span class="text-yellow-300 font-semibold">Server-Side Rendering (SSR)</span> serta 
+              <span class="text-yellow-300 font-semibold">Static Site Generation (SSG)</span> 
+              dapat meningkatkan performa website. Saya juga ingin memahami lebih dalam tentang 
+              backend menggunakan <span class="text-yellow-300 font-semibold">ORM</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </section>
 
   <section id="about" class="bg-gray-900 min-h-screen flex items-center justify-center p-6">
