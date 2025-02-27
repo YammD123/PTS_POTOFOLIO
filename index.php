@@ -24,7 +24,7 @@
         <ul id="menu" class="hidden md:flex space-x-6">
           <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
           <li><a href="#about" class="hover:text-yellow-400">About</a></li>
-          <li><a href="#education" class="hover:text-yellow-400">Educational & Skills</a></li>
+          <li><a href="#education" class="hover:text-yellow-400">Skills & Educational</a></li>
           <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
         </ul>
       </div>
@@ -42,7 +42,6 @@
   <main class="px-6 py-16 min-h-screen flex flex-col justify-center items-center">
       <div class="bg-gray-900/80 backdrop-blur-lg border border-yellow-400 shadow-2xl rounded-2xl px-12 py-14 w-full max-w-7xl text-center md:text-left">
         <div class="flex flex-col md:flex-row items-center gap-16">
-          <!-- Profile Image -->
           <div class="relative">
             <img 
               src="./img/siam.jpg"
@@ -51,7 +50,6 @@
             />
           </div>
     
-          <!-- Profile Text -->
           <div class="max-w-3xl">
             <h1 class="text-4xl font-bold text-yellow-300 mb-2">Siam Al Sobari</h1>
             <h2 class="text-lg text-gray-300 font-medium italic">Pelajar & Calon Fullstack Developer</h2>
@@ -129,7 +127,7 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
+        <!--  Form -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
           <form method="POST" class="space-y-4">
             <input type="text" placeholder="Name" name="name" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300" />
