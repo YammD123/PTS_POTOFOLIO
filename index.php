@@ -24,51 +24,52 @@
         <ul id="menu" class="hidden md:flex space-x-6">
           <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
           <li><a href="#about" class="hover:text-yellow-400">About</a></li>
-          <li><a href="#education" class="hover:text-yellow-400">Skills & Educational</a></li>
+          <li><a href="#education" class="hover:text-yellow-400">Educational & Skills</a></li>
+          <li><a href="#portofolio" class="hover:text-yellow-400">Portofolio</a></li>
           <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
         </ul>
       </div>
 
-      <!-- Mobile Menu -->
+      <!-- Hp -->
       <ul id="mobile-menu" class="hidden flex-col space-y-4 py-4 text-center border-t border-gray-700 md:hidden">
         <li><a href="#home" class="block hover:text-yellow-400">Home</a></li>
         <li><a href="#about" class="block hover:text-yellow-400">About</a></li>
         <li><a href="#education" class="block hover:text-yellow-400">Educational & Skills</a></li>
+        <li><a href="#portofolio" class="block hover:text-yellow-400">Portofolio</a></li>
         <li><a href="#contact" class="block hover:text-yellow-400">Contact</a></li>
       </ul>
     </div>
   </nav>
   <section id="home" class="bg-gray-900 min-h-screen flex items-center justify-center">
-  <main class="px-6 py-16 min-h-screen flex flex-col justify-center items-center">
+    <main class="px-6 py-16 min-h-screen flex flex-col justify-center items-center">
       <div class="bg-gray-900/80 backdrop-blur-lg border border-yellow-400 shadow-2xl rounded-2xl px-12 py-14 w-full max-w-7xl text-center md:text-left">
         <div class="flex flex-col md:flex-row items-center gap-16">
           <div class="relative">
-            <img 
+            <img
               src="./img/siam.jpg"
               class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-lg border-4 border-yellow-300 transform transition-all duration-300 hover:scale-105"
-              alt="Profile Picture"
-            />
+              alt="Profile Picture" />
           </div>
-    
+
           <div class="max-w-3xl">
             <h1 class="text-4xl font-bold text-yellow-300 mb-2">Siam Al Sobari</h1>
             <h2 class="text-lg text-gray-300 font-medium italic">Pelajar & Calon Fullstack Developer</h2>
-            
+
             <p class="mt-6 text-gray-300 leading-relaxed">
-              Saya siswa kelas 10 SMK Telkom Pwt yang tertarik di dunia pemrograman, terutama 
-              <span class="text-yellow-300 font-semibold">React.js</span> dan 
-              <span class="text-yellow-300 font-semibold">Next.js</span>.  
-              Saya ingin menjadi seorang 
-              <span class="text-yellow-300 font-semibold">Fullstack Developer</span> dan memahami cara 
+              Saya siswa kelas 10 SMK Telkom Pwt yang tertarik di dunia pemrograman, terutama
+              <span class="text-yellow-300 font-semibold">React.js</span> dan
+              <span class="text-yellow-300 font-semibold">Next.js</span>.
+              Saya ingin menjadi seorang
+              <span class="text-yellow-300 font-semibold">Fullstack Developer</span> dan memahami cara
               <span class="text-yellow-300 font-semibold">deploy aplikasi</span> dengan baik.
             </p>
-    
+
             <p class="mt-4 text-gray-300 leading-relaxed">
-              Saat ini saya sedang fokus belajar tentang 
-              <span class="text-yellow-300 font-semibold">Pages Router</span> di Next.js dan bagaimana 
-              <span class="text-yellow-300 font-semibold">Server-Side Rendering (SSR)</span> serta 
-              <span class="text-yellow-300 font-semibold">Static Site Generation (SSG)</span> 
-              dapat meningkatkan performa website. Saya juga ingin memahami lebih dalam tentang 
+              Saat ini saya sedang fokus belajar tentang
+              <span class="text-yellow-300 font-semibold">App Router</span> di Next.js dan bagaimana
+              <span class="text-yellow-300 font-semibold">Server-Side Rendering (SSR)</span> serta
+              <span class="text-yellow-300 font-semibold">Static Site Generation (SSG)</span>
+              dapat meningkatkan performa website. Saya juga ingin memahami lebih dalam tentang
               backend menggunakan <span class="text-yellow-300 font-semibold">ORM</span>.
             </p>
           </div>
@@ -83,6 +84,21 @@
 
   <section id="education" class="bg-gray-900 min-h-screen flex items-center justify-center p-6">
     <?php include "./src/components/E&S.html"; ?>
+  </section>
+
+  <section id="portofolio" class="bg-gray-900 min-h-screen flex items-center justify-center p-6">
+    <div class="min-h-screen flex flex-col items-center justify-center gap-10">
+      <h1 class=" text-4xl text-center font-bold text-yellow-300 tracking-wide uppercase">
+        Portofolio
+        <hr class="w-full">
+      <div class="border mt-24 border-yellow-50 bg-gray-900 rounded-2xl shadow-lg shadow-yellow-700 p-8 w-[900px] flex gap-10 ">
+        <img class="w-60 h-60 object-cover rounded-lg" src="./img/image.png" alt="">
+        <div class="flex flex-col justify-center">
+          <h2 class="text-3xl font-bold text-yellow-300">FastStore</h2>
+          <p class="text-gray-300 text-lg mt-2">FastStore merupakan website topup yang dibuat menggunakan html, css, dan javascript</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contact" class="bg-gray-900 text-gray-300 py-12">
@@ -138,10 +154,9 @@
             </button>
           </form>
         </div>
-
       </div>
     </div>
-    
+
   </section>
 
   <?php include "./src/components/Footer.html"; ?>
